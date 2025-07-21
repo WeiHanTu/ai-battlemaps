@@ -11,6 +11,9 @@
 
 Dungeon Coder is a comprehensive web application that seamlessly integrates multiple cutting-edge AI technologies to generate custom 3D models and dungeons in real-time. Built for CS 252D: Advanced Computer Vision @ UCSD, this project demonstrates the power of combining modern generative AI with intuitive user interfaces.
 
+![Dungeon Coder Interface](figs/Dungeon%20Coder%20Surfing%20Prof.png)
+*Primary Dungeon Coder interface for interacting with custom 3D models*
+
 ### 🎯 Key Features
 
 - **🤖 AI-Powered 3D Asset Generation**: Convert text prompts and images into high-quality 3D models using TRELLIS
@@ -104,6 +107,9 @@ Dungeon Coder is a comprehensive web application that seamlessly integrates mult
 3. **Image Editing**: Use GPT Image 1 to modify and combine existing assets
 4. **Asset Combination**: Merge multiple assets using AI-powered editing
 
+![Asset Generation Methods](figs/CSE%20252D%20Project%20Asset.png)
+*Different methods of image generation allow for asset combination and creative control*
+
 ### Dungeon Creation
 
 1. **Manual Placement**: Upload terrain images and place assets on a grid-based plane
@@ -111,6 +117,12 @@ Dungeon Coder is a comprehensive web application that seamlessly integrates mult
    - Set dungeon parameters (rooms, layout type, scale)
    - Provide a thematic prompt
    - Let the AI generate and place assets automatically
+
+![Dungeon Generation Pipeline](figs/Dungeon%20Generation%20Pipeline%20(1).png)
+*Dungeon Coder dungeon generation pipeline that combines procedural generation with a custom agential system*
+
+![Edit Plane Asset](figs/Edit%20Plane%20Asset%20Image%20CSE%20252D%20Project.png)
+*Uploading an image as your terrain creates a playable board with grid-based placement and editing*
 
 ### Interactive Features
 
@@ -170,6 +182,28 @@ Dungeon Coder is a comprehensive web application that seamlessly integrates mult
 - **Live Previews**: Real-time 3D rendering with immediate feedback
 - **Interactive Editing**: Full control over asset placement and manipulation
 
+## 📈 Results & Examples
+
+### Generated Assets
+![Default Assets](figs/CSE%20252D%20Project%20Assets%20(1).png)
+*Examples of assets generated using the Dungeon Coder application that are used in the dungeon generator pipeline*
+
+### Rendered Scenes
+![Rendered Scene](figs/CSE%20252D%20Project%20Render.png)
+*Rendered scene designed with the automated dungeon generator pipeline*
+
+### Asset Placement Results
+![Asset Placement](figs/3x3%20Grid%20CSE%20252D%20Project.png)
+*Asset placement examples across LLM families. Each cell shows model output for one room*
+
+### Layout Generation
+![Layout Generation Screen](figs/CSE%20252D%20Project%20Layout%20Gen%20Screen.png)
+*Layout Generation Screen with example generated layout*
+
+### Error Analysis
+![TRELLIS Errors](figs/Visual%20Bug%20Trellis%20Blacksmith%20Table.png)
+*Examples of 3D reconstruction artifacts arising from SLAT's sparse voxel encoding*
+
 ## 📁 Project Structure
 
 ```
@@ -226,6 +260,13 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 👥 Contributors
+
+- **Lucas Dionisopoulos** - Custom TRELLIS Docker container, Flask API, full-stack web application, default asset library, agentic LLM backend
+- **Matthew O'Malley-Nichols** - Layout generation Flask server, image scene synthesis, terrain generation, frontend/backend components
+- **Ryosuke Matsuzawa** - 3D map asset placement API, perspective conversion, Blender geometry node studies
+- **Wei-Han Tu** - Asset drag movement, 3D map asset component library, related work comparison
+
 ## 🙏 Acknowledgments
 
 - **TRELLIS Team** - For the 3D asset generation technology
@@ -236,7 +277,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Project Lead**: Lucas Dionisopoulos - `ldionisopoulos@ucsd.edu`
 - **GitHub Issues**: [Report bugs or request features](https://github.com/WeiHanTu/ai-battlemaps/issues)
 - **Live Demo**: [tinyurl.com/dungeoncoder](https://tinyurl.com/dungeoncoder)
 
